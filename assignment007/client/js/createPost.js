@@ -2,7 +2,8 @@ const createPost = () => {
     const data = {
         name: document.querySelector('#name').value,
         url: document.querySelector('#url').value,
-        text: document.querySelector('#text').value
+        text: document.querySelector('#text').value,
+        imageURL: document.querySelector('#imageURL').value
     }
     console.log('Saving the following object to the server:', data);
 

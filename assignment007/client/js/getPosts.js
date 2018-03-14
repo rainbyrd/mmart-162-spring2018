@@ -13,6 +13,7 @@ const showPosts = (posts) => {
         let template = `
               <h2>${post.name}</h2>
               <a href="${post.url}">More</a>
+              <img src="${post.imageUrl}">
               <p>${post.text}</p>
               <div class="comments">
                     <h3>Comments</h3>
