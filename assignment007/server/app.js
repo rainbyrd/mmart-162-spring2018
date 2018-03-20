@@ -4,7 +4,7 @@ const logger = require('morgan')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const routes = require('./routes')
-
+//pre-loaded posts are in "store" as objects, more can be added to them from within app
 let store = {
     posts: [{
         name: 'What is going on right now in this EdX course?',

@@ -5,7 +5,7 @@ const getPosts = () => {
         return response.json();
       }).then(showPosts)
 }
-
+// displays posts upon loading the page, populating them by bringing their attributes into the template
 const showPosts = (posts) => {
     console.log(posts)
     const container = document.getElementById('container')
