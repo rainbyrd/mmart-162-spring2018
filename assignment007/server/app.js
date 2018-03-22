@@ -4,7 +4,7 @@ const logger = require('morgan')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const routes = require('./routes')
-//pre-loaded posts are in "store" as objects, more can be added to them from within app
+//pre-loaded posts are in "store" as objects, more can be added to them from within app and accessed in other places by object item type
 let store = {
     posts: [{
         name: 'What is going on right now in this EdX course?',
@@ -25,11 +25,11 @@ let store = {
         imageUrl: 'https://c402277.ssl.cf1.rackcdn.com/photos/6520/images/story_full_width/iStock_000016816803XLarge_mini.jpg?1394631384',
         text: 'Sloth man is slow but his heart is strong',
                 comments: [{
-                text: 'So many assumptions are being made about what we already know?! This is overwhelming!'
+                text: 'First'
             }, {
-                text: 'This is great! At the end of this unit, we\'re going to be able to make our own API.'
+                text: 'I hate sloths'
             }, {
-                text: 'How do we make this live? On a real server?!!'
+                text: '^ You guys need to go home ^'
         }]
     }
   ]

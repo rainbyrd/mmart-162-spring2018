@@ -1,3 +1,4 @@
+//get, add, update or delete posts.
 module.exports = {
     getPosts(req, res) {
         console.log('\n\n-------- YOUR DATA STORE --------')
@@ -8,8 +9,10 @@ module.exports = {
     getPost(req, res) {
         const postID = req.params.postId
         if (postID >= req.store.posts.length) {
+          //handles if the id is larger than the amount of stored posts
             res.status(500).send({error: `${postID} is out of range`})
         } else {
+          //sends the 'okay' status and the actual post
             res.status(200).send(req.store.posts[postID])
         }
     },
